@@ -1,0 +1,67 @@
+body {
+    background: #f1f1f1;
+}
+main {
+    display: flex;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section {
+    border: 1px solid grey;
+    background: white;
+}
+section:nth-child(1) {
+    flex: 1;
+}
+section:nth-child(2) {
+    flex: 2;
+}
+#profile {
+    position: relative;
+}
+#profile img {
+    width: 100%;
+}
+#profile p {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    font-size: 24px;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    color: #757575;
+}
+.icon {
+    color: #009688;
+    margin-right: 16px;
+    margin-top: 8px;
+}
+.progressbar {
+    background-color: #f0cece;
+    border-radius: 16px;
+    margin-top: 8px;
+}
+.progressbar-item {
+    background: #009688;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+}
+.container {
+    padding: 16px;
+}
+.tag {
+    background: #009688;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+}
+.period {
+    color: #009688;
+}
+.experience:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
