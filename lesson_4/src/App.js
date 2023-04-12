@@ -1,8 +1,8 @@
-import { PureComponent } from 'react';
+import { Component } from 'react';
 import './App.css';
 import Person from './User';
 
-class App extends PureComponent {
+class App extends Component {
   constructor(props) {
     super(props)
     console.log('constructor')
