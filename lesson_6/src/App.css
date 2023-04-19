@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+header {
+  border: 1px solid lightgoldenrodyellow;
+}
+
+.posts {
+  border: 1px solid lightgoldenrodyellow;
+}
+
+.main {
+  border: 1px solid lightgoldenrodyellow;
+  flex: 3;
+}
+
+.sidebar {
+  border: 1px solid lightgoldenrodyellow;
+  flex: 1;
+}
+
+.content {
+  display: flex;
+}
