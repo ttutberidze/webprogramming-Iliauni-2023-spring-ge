@@ -27,6 +27,7 @@ router.post('/', (req, res) => {
 router.put('/:productId', (req, res) => {
     const {productId} = req.params;
     console.log(req.body);
+    console.log(parseInt(productId));
     if(parseInt(productId)) {
         return res.send('Product Updated');
     }
