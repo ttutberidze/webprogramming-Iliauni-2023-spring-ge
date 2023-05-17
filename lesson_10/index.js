@@ -5,17 +5,22 @@ const User = mongoose.model('User', {
         type: String,
         required: true
     },
-    age: Number
+    age: {
+        type: Number
+    },
 })
 
 const main = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/task-management');
+        await mongoose.connect('mongodb://localhost:27017/user-management');
         const user = new User({
             name: 'James',
-            age: 'asdasd'
+            age: '30',
+            address: {
+                city: 'Tbilisi'
+            }
         })
-    await user.save()
+        await user.save()
     } catch(error) {
         console.log(error.message)
     }
