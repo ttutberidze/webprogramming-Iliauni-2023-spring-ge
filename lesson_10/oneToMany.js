@@ -8,8 +8,8 @@ const createTask = async (userId, name) => {
     return task._id;
 }
 
-const createUser = async (name, taskIds) => {
-    const user = new User({name, tasks: taskIds});
+const createUser = async (name) => {
+    const user = new User({name});
     return await user.save(); 
 }
 
@@ -23,7 +23,6 @@ const main = async () => {
         await createTask(user._id, 'Go to shop3');
         await createTask(user._id, 'Go to shop4');
         
-
         const users = await User.find().populate('tasks')
         console.log(users.map(({tasks}) => tasks));
 
